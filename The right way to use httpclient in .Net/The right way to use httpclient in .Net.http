@@ -1,0 +1,6 @@
+@The_right_way_to_use_httpclient_in_.Net_HostAddress = http://localhost:5182
+
+GET {{The_right_way_to_use_httpclient_in_.Net_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
