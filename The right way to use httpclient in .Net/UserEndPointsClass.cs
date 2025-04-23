@@ -6,6 +6,13 @@ namespace The_right_way_to_use_httpclient_in_.Net
 	{
 		public static void MapUserEndPoints(this IEndpointRouteBuilder app)
 		{
+			app.MapGet("/users/v5/{username}", async (string username, IGitHubApi githubServices) =>
+			{
+				var content = await githubServices.GetByUsernameAsync(username);
+
+				return Results.Ok(content);
+			});
+
 			//using typed httpclient
 			app.MapGet("/users/v4/{username}", async (string username, GithubServices githubServices) =>
 			{

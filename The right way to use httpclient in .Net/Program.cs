@@ -1,5 +1,5 @@
-
 using Microsoft.Extensions.Options;
+using Refit;
 
 namespace The_right_way_to_use_httpclient_in_.Net
 {
@@ -14,6 +14,7 @@ namespace The_right_way_to_use_httpclient_in_.Net
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
 
+			// Add a typed client for GithubServices
 			builder.Services.AddHttpClient<GithubServices>("github", (serviceprovider, Httpclient) =>
 			{
 				// preconfigured httpclient with base address and headers
@@ -39,6 +40,16 @@ namespace The_right_way_to_use_httpclient_in_.Net
 					PooledConnectionLifetime = TimeSpan.FromMinutes(5),
 				};
 			}).SetHandlerLifetime(Timeout.InfiniteTimeSpan);
+
+			// Add Refit client
+			builder.Services.AddRefitClient<IGitHubApi>()
+			.ConfigureHttpClient((serviceprovider, Httpclient) =>
+			{
+				var settings = serviceprovider.GetRequiredService<IOptions<GitHubSettings>>().Value;
+				Httpclient.BaseAddress = new Uri("https://api.github.com");
+				Httpclient.DefaultRequestHeaders.Add("User-Agent", settings.UserAgent);
+				Httpclient.DefaultRequestHeaders.Add("Authorization", settings.AccessToken);
+			});
 
 			builder.Services.Configure<GitHubSettings>(builder.Configuration.GetSection("GitHubSettings"));
 
