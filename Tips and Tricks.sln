@@ -1,9 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The right way to use httpclient in .Net", "The right way to use httpclient in .Net\The right way to use httpclient in .Net.csproj", "{AFC0BD52-3139-4E2B-BC10-E11447EFDFE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.App", "WebAPI\WebAPI.App.csproj", "{538FB956-0C01-493E-8A8F-3657FDD59FCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.Application", "WebAPI_Application\WebAPI.Application.csproj", "{A7C1F40A-1C65-459B-9BC5-883DB57E550F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.Domain", "WebAPI_Domain\WebAPI.Domain.csproj", "{519B4D4F-3A2F-49DB-A0AA-2072C3BE5075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.Infrastructure", "WebAPI_Infrastructure\WebAPI.Infrastructure.csproj", "{7C903F76-FA1D-4100-8042-34961C66ED47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.Persistence", "WebAPI_Persistence\WebAPI.Persistence.csproj", "{70738A6E-D9CF-4A97-8E88-BE0693688D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.Presentation", "WebAPI_Presentation\WebAPI.Presentation.csproj", "{3510B2DC-BB79-4860-B374-C6B03B631032}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +27,30 @@ Global
 		{AFC0BD52-3139-4E2B-BC10-E11447EFDFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFC0BD52-3139-4E2B-BC10-E11447EFDFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFC0BD52-3139-4E2B-BC10-E11447EFDFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538FB956-0C01-493E-8A8F-3657FDD59FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538FB956-0C01-493E-8A8F-3657FDD59FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538FB956-0C01-493E-8A8F-3657FDD59FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538FB956-0C01-493E-8A8F-3657FDD59FCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7C1F40A-1C65-459B-9BC5-883DB57E550F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C1F40A-1C65-459B-9BC5-883DB57E550F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C1F40A-1C65-459B-9BC5-883DB57E550F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C1F40A-1C65-459B-9BC5-883DB57E550F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{519B4D4F-3A2F-49DB-A0AA-2072C3BE5075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{519B4D4F-3A2F-49DB-A0AA-2072C3BE5075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{519B4D4F-3A2F-49DB-A0AA-2072C3BE5075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{519B4D4F-3A2F-49DB-A0AA-2072C3BE5075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C903F76-FA1D-4100-8042-34961C66ED47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C903F76-FA1D-4100-8042-34961C66ED47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C903F76-FA1D-4100-8042-34961C66ED47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C903F76-FA1D-4100-8042-34961C66ED47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70738A6E-D9CF-4A97-8E88-BE0693688D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70738A6E-D9CF-4A97-8E88-BE0693688D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70738A6E-D9CF-4A97-8E88-BE0693688D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70738A6E-D9CF-4A97-8E88-BE0693688D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3510B2DC-BB79-4860-B374-C6B03B631032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3510B2DC-BB79-4860-B374-C6B03B631032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3510B2DC-BB79-4860-B374-C6B03B631032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3510B2DC-BB79-4860-B374-C6B03B631032}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
